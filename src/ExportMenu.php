@@ -979,7 +979,7 @@ class ExportMenu extends GridView
     {
         $items = $this->asDropdown ? [] : '';
         $isBs4 = $this->isBs4();
-        Html::addCssClass($this->dropdownOptions, ['btn', $this->getDefaultBtnCss()]);
+        //Html::addCssClass($this->dropdownOptions, ['btn', $this->getDefaultBtnCss()]);
         foreach ($this->exportConfig as $format => $settings) {
             if (!isset($settings) || $settings === false) {
                 continue;
