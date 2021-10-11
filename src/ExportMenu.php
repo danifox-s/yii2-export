@@ -1728,7 +1728,7 @@ class ExportMenu extends GridView
             return;
         }
         $selector = [];
-        Html::addCssClass($this->columnSelectorOptions, ['btn', $this->getDefaultBtnCss(), 'dropdown-toggle']);
+        //Html::addCssClass($this->columnSelectorOptions, ['btn', $this->getDefaultBtnCss(), 'dropdown-toggle']);
         $header = ArrayHelper::getValue($this->columnSelectorOptions, 'header', Yii::t('kvexport', 'Select Columns'));
         $this->columnSelectorOptions['header'] = (!isset($header) || $header === false) ? '' :
             '<li class="dropdown-header">' . $header . '</li><li class="kv-divider"></li>';
